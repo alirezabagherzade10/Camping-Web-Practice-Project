@@ -10,7 +10,7 @@ body{
     background: url('../images/header-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 800px;
+    height: 700px;
     border-radius: 0 0px 9rem 9rem;
 }
 .nav__icon{
@@ -67,4 +67,38 @@ body{
     border: 1px solid #fff;
     padding: .8rem 1.5rem;
     border-radius: 20px;
+}
+.header__main{
+    padding-top: 14rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+}
+.header__comment{
+    font-size: 2.5rem;
+    color: #fff;
+    max-width: 18rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Archivo Black";
+}
+.header__subcomment{
+    max-width: 27rem;
+    text-align: center;
+    color: #fff;
+    line-height: 1.8rem;
+}
+.header__button-discover{
+    color: #fff;
+    background-color: #e86d50;
+    border: none;
+    outline: none;
+    padding: .7rem 2.7rem;
+    border-radius: 4rem ;
+    font-family: "Roboto Medium";
 }
