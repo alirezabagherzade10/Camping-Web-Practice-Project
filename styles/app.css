@@ -6,12 +6,16 @@ body{
     margin: 0;
     box-sizing: border-box;
 }
+:root{
+    --orange:#e86d50;
+}
 .header{
-    background: url('../images/header-bg.jpg');
+background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('../images/header-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 700px;
-    border-radius: 0 0px 9rem 9rem;
+    background-position: center;
+    height: 90vh;
+    border-radius: 0 0px 10rem 10rem;
 }
 .nav__icon{
     transform: scale(2);
@@ -37,6 +41,10 @@ body{
     text-decoration: none;
     color: #c0ccd7;
     font-size: 1.1rem;
+    transition: 250ms;
+}
+.nav__item--link:hover{
+    color: #fff;
 }
 .nav__item--focus{
     color: #fff;
@@ -57,19 +65,27 @@ body{
 .nav__right-section{
     display: flex;
     align-items: center;
-    gap: .8rem;
+    gap: 1rem;
 }
 .nav__link--signup{
     color: #fff;
 }
+.nav__link--signup:hover{
+    color: var(--orange);
+}
 .nav__link--signin{
     color: #fff;
     border: 1px solid #fff;
-    padding: .8rem 1.5rem;
+    padding: .5rem 1.5rem;
     border-radius: 20px;
+    transition: 300ms;
+}
+.nav__link--signin:hover ,.header__button-discover:hover{
+    background-color: darkgrey;
+    color: var(--orange);
 }
 .header__main{
-    padding-top: 14rem;
+    padding-top: 10rem;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -101,4 +117,43 @@ body{
     padding: .7rem 2.7rem;
     border-radius: 4rem ;
     font-family: "Roboto Medium";
+    transition: 300ms;
+}
+.sidenav{
+    width: 1.9rem;
+    height: 1.9rem;
+    background-color: #e86d50;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidenav__line{
+    width: 1.5rem;
+    height: 2.2px;
+    background-color: #fff;
+    position: relative;
+    top: 13px;
+    left: 2.8px;
+}
+.sidenav__line::after{
+    content: '';
+    width: 1.5rem;
+    height: 2.2px;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    top: 7px;
+}
+.sidenav__line::before{
+    content: '';
+    width: 1.5rem;
+    height: 2.2px;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    bottom: 7px;
+}
+.sidenav{
+    display: none;
 }
