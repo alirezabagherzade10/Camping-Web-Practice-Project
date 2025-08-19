@@ -8,6 +8,7 @@ body{
 }
 :root{
     --orange:#e86d50;
+    --information:#424242;
 }
 .header{
 background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('../images/header-bg.jpg');
@@ -16,10 +17,8 @@ background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('../images/
     background-position: center;
     height: 90vh;
     border-radius: 0 0px 10rem 10rem;
-}
-.nav__icon{
-    transform: scale(2);
-}
+    padding-bottom: 8rem ;
+}   
 .nav{
     padding-top: 2rem;
     display: flex;
@@ -156,4 +155,35 @@ background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('../images/
 }
 .sidenav{
     display: none;
+}
+.header__footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 5rem;
+    flex-wrap: wrap;
+}
+.box{
+    width: 13rem;
+    height: 10rem;
+    background-color: #FFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Archivo Black";
+    font-weight: 100;
+    gap: 1rem;
+}
+.box___upsec{
+    width: 70px;
+}
+.box___downsec{
+    text-align: center;
+}
+.box__downsec--footer{
+    color: var(--information);
+    font-size: 10px ;
+    line-height: 110%;
 }
