@@ -9,6 +9,9 @@
     .container {
         max-width: 900px;
     }
+    .distance{
+        gap: 2rem;
+    }
 }
 
 @media only screen and (max-width: 1008px) {
