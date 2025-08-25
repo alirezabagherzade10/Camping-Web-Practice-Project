@@ -12,6 +12,8 @@
     .distance{
         gap: 2rem;
     }
+    .form{
+    }
 }
 
 @media only screen and (max-width: 1008px) {
@@ -36,6 +38,27 @@
     .services{
         gap: 1rem;
     }
+    .feedback{
+        flex-direction: column;
+        height: 30rem;
+        gap: 2rem;
+    }
+    .feedback__banner{
+        order: -1;
+    }
+    .feddback__comment{
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        text-align: center;
+    }
+    .feedback__banner{
+        padding: 0;
+        margin: 0;
+    }
+    .form{
+        padding: 0;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -49,6 +72,12 @@
     .services{
         gap: 2rem;
     }
+    .form{
+        width: 18rem;
+    }
+    .feedback__info{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 575px) {
@@ -58,5 +87,8 @@
     }
     .header__subcomment{
         max-width: 19rem;
+    }
+    .form{
+        width: 15rem;
     }
 }

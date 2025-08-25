@@ -10,7 +10,8 @@ body{
 :root{
     --orange:#e86d50;
     --information:#424242;
-    --bg-color:#fae5ed;
+    --bg-color:#faf3f1;
+    --white:#FFF;
 }
 
 
@@ -294,4 +295,76 @@ background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('../images/
     border-radius: 10px;
     padding: .10rem;
     cursor: pointer;
+}
+
+
+/* feedback */
+.feedback{
+    width: 100%;
+    height: 20rem;
+    background-color: #fae0da;
+    justify-self: center;
+    margin-top: 6rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.feddback__comment{
+    width: 50%;
+    padding-left: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 1rem;
+    line-height: 1.5rem;
+}
+.feedback__title{
+    justify-self: center !important;
+}
+.feedback__info{
+    color: var(--information);
+    max-width: 22rem;
+}
+.feedback__banner{
+    width:50%;
+    padding-right: 3rem;
+    background-size: cover;
+}
+.banner__img{
+    width: 100%;
+}
+.form{
+    width: 20rem;
+    height: 2.5rem;
+    border-radius: .5rem ;
+    background-color: var(--white);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form__icon--email{
+    position: absolute;
+    left: 5px;
+}
+.form__input{
+    outline: none;
+    border: none;
+    position: absolute;
+    left: 2rem;
+
+}
+.button__submit{
+    background-color: var(--orange);
+    border-radius: .5rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 3rem;
+    height: 2rem;
+    position: absolute;
+    right: 5px;
 }
