@@ -9,10 +9,20 @@
     .container {
         max-width: 900px;
     }
-    .distance{
+
+    .distance {
         gap: 2rem;
     }
-    .form{
+
+    .footer__section {
+        gap: 2rem;
+    }
+
+    .footer__link {
+        margin-bottom: 2rem;
+    }
+    .footer__about-list{
+    max-width: 10rem;
     }
 }
 
@@ -28,36 +38,48 @@
     .sidenav {
         display: block;
     }
-    .box{
+
+    .box {
         flex-basis: 40%;
     }
-    .box__downsec--footer{
+
+    .box__downsec--footer {
         max-width: 10rem;
         line-height: 1rem;
     }
-    .services{
+
+    .services {
         gap: 1rem;
     }
-    .feedback{
+
+    .feedback {
         flex-direction: column;
         height: 30rem;
         gap: 2rem;
     }
-    .feedback__banner{
+
+    .feedback__banner {
         order: -1;
     }
-    .feddback__comment{
+
+    .feddback__comment {
         padding: 0;
         margin: 0;
         align-items: center;
         text-align: center;
     }
-    .feedback__banner{
+
+    .feedback__banner {
         padding: 0;
         margin: 0;
     }
-    .form{
+
+    .form {
         padding: 0;
+    }
+
+    .footer__help {
+        padding-right: 29px;
     }
 }
 
@@ -65,19 +87,29 @@
     .container {
         max-width: 540px;
     }
-    .box{
+
+    .box {
         flex-basis: 70%;
-        box-shadow:2px 4px 8px  #ffd5cb;
+        box-shadow: 2px 4px 8px #ffd5cb;
     }
-    .services{
+
+    .services {
         gap: 2rem;
     }
-    .form{
+
+    .form {
         width: 18rem;
     }
-    .feedback__info{
+
+    .feedback__info {
         width: 100%;
     }
+
+    .footer__info {
+        margin: 0 auto;
+        text-align: center;
+    }
+
 }
 
 @media only screen and (max-width: 575px) {
@@ -85,10 +117,22 @@
         max-width: 100%;
         padding: 0 1rem;
     }
-    .header__subcomment{
+
+    .header__subcomment {
         max-width: 19rem;
     }
-    .form{
+
+    .form {
         width: 15rem;
+    }
+
+    .footer__section {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer__help {
+        padding: 0;
+        margin: 0;
     }
 }
