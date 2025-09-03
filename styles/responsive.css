@@ -30,8 +30,23 @@
     .container {
         max-width: 720px;
     }
+    body{
+        position: relative;
+    }
 
     .nav___list {
+        flex-direction: column;
+        background-color: var(--orange);
+        position: absolute;
+        left: 0;
+        top: 0;
+        align-items: start;
+        gap: 2rem;
+        height: 100%;
+        width: 10rem;
+        z-index: 100;
+    }
+    .hidden-992{
         display: none;
     }
 

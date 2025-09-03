@@ -19,7 +19,7 @@
             <nav class="nav">
                 <div class="nav__left-section">
                     <img src="images/svgs/logo.svg" alt="app-icon" class="nav__icon">
-                    <ul class="nav___list">
+                    <ul class="nav___list hidden-992">
                         <li class="nav__item">
                             <a href="" class="nav__item--link nav__item--focus">Home</a>
                         </li>
@@ -51,7 +51,16 @@
                     <h4 class="nav__link--signin">Sign in</h4>
                 </div>
                 <div class="sidenav">
-                    <div class="sidenav__line"></div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 burgur-icon">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" color="#fff" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 open-burgur-icon hidden">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" color="#fff"/>
+                    </svg>
+
                 </div>
             </nav>
             <main class="header__main">
@@ -516,6 +525,7 @@
             @ 2020. All rights reserved.
         </div>
     </footer>
+    <script src="./scripts/app.js"></script>
 </body>
 
 </html>
